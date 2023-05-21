@@ -1,0 +1,448 @@
+/* GENERAL */
+
+*{
+margin: 0;
+padding: 0;
+}
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* STYLE BALISE BODY */
+
+.bg1 {                                                  
+    font-family: 'Parisienne' !important;               
+    background-color: white !important;   
+}
+
+.bg2{                                                   
+    
+    background-color:rgb(37, 125, 150) !important;    
+    font-family: 'Parisienne' !important;    
+    background-image: url(../images/carte.jpg) !important;            
+}  
+
+
+/* STYLE NAVBAR */
+
+.navbar-brand{
+    font-weight: bold !important;
+    font-size: 1.7em !important;
+}
+
+.nav-item{padding-left: 20px !important;}
+
+.nav-link-1:hover{color:rgb(200, 156, 95)!important}  /* page accueil */
+
+.nav-link-2:hover{color:rgb(200, 156, 95) !important}   /*page carte du restaurant et reservation */
+
+/* .navbar-2{background-color:rgb(140,122,98) !important;    }   page carte du restaurant et reservation    */
+
+button{ 
+    font-family:Arial, Helvetica, sans-serif !important;
+    border-color: white !important ;
+    background-color:  rgb(200, 156, 95) !important;
+    color: white!important ;
+}
+
+button:hover {   
+    background-color: white !important;
+    color: rgb(200, 156, 95) !important;
+    border-color: rgb(200, 156, 95) !important ;
+}
+
+.background-image{
+    background-image: url('../images/salle.jpg');
+    background-size: cover;
+    height: 100vh;   
+    border-bottom: solid 3px rgb(166,133,88);
+    border-top: solid 2px rgb(166,133,88);
+}
+
+
+/* STYLE BOUTON RESERVATION XXL */
+
+.button-xxl {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 120px;
+    font-family: 'Parisienne' !important;    
+}
+
+.btn-xxl {   
+    height: 80px;
+    width: 300px; 
+    background-color: rgb(244,234,226) !important;
+    color: rgb(166,133,88) !important;
+    border-color: rgb(166,133,88) !important ; 
+}
+
+.btn-xxl:hover{
+    border-color: rgb(244,234,226) !important ;
+    background-color:  rgb(166,133,88) !important;
+    color: white!important ;
+} 
+
+
+/* STYLE GALERIE IMAGES */  
+
+div h1 { 
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color:rgb(200, 156, 95) 
+}
+
+.separateur{
+    width: 20%;
+    margin: 0 auto;
+    color:rgb(166,133,88) !important ;
+    background-color:rgb(166,133,88) !important;
+    border-color: rgb(166,133,88) !important;
+    margin-bottom: 40px;
+}
+
+.galerie-images{
+    padding-bottom: 100px;
+    padding-top: 50px;  
+}
+
+.container{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;     
+}
+
+figure {
+    width: 40%;  
+    margin: 20px !important;
+    position: relative;   
+  }
+
+img {
+    width: 100%;
+    height: 100% !important;
+    height: auto;
+    margin: 10px;
+    transition: all 1s;
+    opacity: 0.8;
+}
+
+figcaption {
+    font-size: 2em !important;
+    color:  rgb(166,133,88) !important;
+    opacity:0;
+    background-color: AntiqueWhite;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    left:20px;
+    right:0;
+    border:5px ridge rgb(166,133,88);
+}
+     
+figure:hover figcaption {
+    transition:all 1s;
+    opacity:1;
+    cursor:default;    
+}
+
+img:hover {transform: scale(1.05);}
+
+
+/* STYLE BOUTON RESERVATION XXL-2*/
+
+.button-xxl-2 {
+    text-align: center;
+    padding: 120px;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+.btn-xxl-2 {   
+    
+    height: 80px;
+    width: 300px; 
+    box-shadow: 5px 7px 20px rgb(118, 131, 147);   
+}
+
+.btn-xxl-2:hover{box-shadow: none;} 
+
+
+/* STYLE HORAIRES DU RESTAURANT */
+
+.separateur2{
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    background-color:rgb(166,133,88) !important
+}
+
+.section-horaires{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white !important;    
+    background-size: cover;
+    /* padding-top: 100px; */
+    padding-bottom: 80px;
+    /* border-top: solid 5px rgb(166,133,88); */
+    border-bottom: solid 3px rgb(166,133,88);
+}
+
+.horaires{
+    background-color:white;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 10px ridge rgb(200, 156, 95) ;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-shadow: 10px 15px 20px rgb(118, 131, 147);
+}
+
+.horaires h2 { 
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.horaires h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table_horaires{
+    
+    width: 250px !important;
+   
+}
+
+.table_horaires tr{border-bottom: white;}
+
+/* STYLE FOOTER */
+
+footer{ 
+    background-color:rgb(140,122,98);
+    height: 150px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+footer h1{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.copyright{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(200, 156, 95) ;
+}
+
+
+
+/* STYLE FORMULAIRE RESERVATION */
+
+.bg3{    
+    background-image: url('../images/reservation.jpg') ;
+    background-size: cover;
+    font-family: 'Parisienne' !important;               
+
+}
+
+.reservation{
+    padding: 50px;
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border: 3px solid rgb(200, 156, 95) ; */
+    background-color: rgb(240, 240, 240) !important;
+
+}
+.reservation h1{
+    margin:0;
+    padding:0;
+    color: rgb(162, 117, 71);
+
+}
+
+.fields div label {
+    /* display: block; */
+    color: #333333;
+    padding: 0.1em 0.6em;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    margin: 0.1em;
+    background-color: rgb(197, 197, 197);
+    user-select: none;
+}
+
+input[type="radio"]{
+    visibility:hidden;
+}
+
+
+.form-group{
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+.date-couverts{margin-top: 40px;}
+
+.memorize, .password{margin-top: 20px;}
+
+
+.checked{visibility: hidden}
+
+
+.btn-form {
+    
+    margin-top: 40px !important;
+    margin-bottom: 40px;
+    box-shadow: 5px 7px 20px rgb(118, 131, 147);
+}
+
+.btn-form:hover{box-shadow: none;}
+
+
+/*STYLE CARTE DU RESTAURANT*/
+
+.carte {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/carte.jpg);
+}
+
+.items-carte {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-family: 'Parisienne' !important;
+
+    padding-bottom: 100px;
+    width: 800px;
+    border: 3px solid rgb(200, 156, 95) ;
+}
+
+.carte p {  text-align: center}
+
+.carte h4{
+    text-align: center;
+    margin: 75px;
+    font-size: 2.em !important;
+    color:rgb(152, 57, 57)
+}
+
+.section-horaires2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white !important;    
+    background-size: cover;
+    /* padding-top: 100px; */
+    padding-bottom: 80px;
+    /* border-top: solid 5px rgb(166,133,88); */
+    border-bottom: solid 3px rgb(200, 156, 95);
+    background-image: url(../images/carte.jpg);
+    margin-top: 50px;
+
+}
+
+.bg{ background-image: url(../images/carte.jpg);}
+
+/* STYLE PAGE CONNEXION */
+
+.cadre {    
+    padding: 50px;
+    margin-top:10vh ;
+    height: 80vh;
+    width: 50%;
+    background-color: rgb(255, 251, 251) !important;
+   
+}
+
+.cadre h1{
+    padding-top:0;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: rgb(162, 117, 71);
+}
+
+.cadre a{text-decoration: none;}
+
+
+.form-connection{  
+    margin:auto;
+    width:80%;  
+}
+
+/* PAGE ADMIN */
+
+.admin h1{
+    padding-top: 0px;
+
+}
+
+
+ 
+ .update form {
+     width: 300px !important;
+     
+ }
+ 
+ .admin h1 {
+     padding-bottom: 0px;
+ }
+
+
+/* CORRECTION RESPONSIVE */
+
+@media only screen and (max-width: 990px) {
+    figcaption{font-size: 1em !important;}
+    .section-horaires{padding-top: 50px;padding-bottom: 30px;}  
+    .items-menu { margin-top: 50px;margin-bottom: 20px;}
+    .cadre{width: 80%;}
+   
+} 
+
+
+@media only screen and (max-width: 500px) {
+    .btn-xxl-2 {   
+        height: auto;
+        width: auto; 
+        box-shadow: none ;
+        font-size: 1.2em !important; 
+    }
+    .navbar-brand{
+       font-size: 1.2em !important;
+    }
+    figure { 
+        margin: 10px !important;   
+      }   
+    figcaption{font-size: 0.7em !important}
+    .cadre{padding:10px}
+    
+} 
+
+.new_admin  { 
+   background-color: aqua !important;
+}
+
+.admin form {
+    width: 300px !important;
+    
+}
+
+.admin h1 {
+    padding-bottom: 0px;
+}
